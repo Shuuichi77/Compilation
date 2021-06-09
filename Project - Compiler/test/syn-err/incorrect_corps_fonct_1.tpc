@@ -1,0 +1,27 @@
+int bonnefonction(int a, int b) {
+    x = 0;
+
+    mafonction(a, b, c, d);
+    mafonction(a);
+    
+    return 0;
+}
+
+int mauvaisefonction(int a, int b) { 
+    x = 0;
+
+    mafonction(void);
+
+    return 0;
+}
+
+
+
+
+
+
+deuxiemeerreur pasdetecteeavant; 
+
+int main(void) {
+    return 0;
+}

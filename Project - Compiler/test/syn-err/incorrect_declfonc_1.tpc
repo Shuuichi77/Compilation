@@ -1,0 +1,18 @@
+int bonnefonction(void) {
+	return 0;
+}
+
+INT bonnefonction(void) {
+	return 0;
+}
+
+
+
+
+
+
+deuxiemeerreur pasdetecteeavant; 
+
+int main(void) {
+	return 0;
+}

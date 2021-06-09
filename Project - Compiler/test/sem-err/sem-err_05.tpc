@@ -1,0 +1,13 @@
+struct mastruct {
+    int a;
+};
+
+
+int main(void) {
+    int a;
+    char c;
+    struct mastruct s;
+    struct mastruct2 f; /* Local variable : Undefined structure name */
+
+    return 0;
+}

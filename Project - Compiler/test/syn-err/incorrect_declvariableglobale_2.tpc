@@ -1,0 +1,9 @@
+int a;
+
+int 1a;
+
+deuxiemeerreur pasdetecteeavant; 
+
+int main(void) {
+    return 0;
+}

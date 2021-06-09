@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "*.lex": "lex",
+        "*.tpc": "c",
+        "*.asm": "platformio-debug.asm",
+        "*.y": "yacc",
+        "decl_var.h": "c",
+        "string.h": "c",
+        "abstract-tree.h": "c",
+        "stdlib.h": "c",
+        "abstract_tree.h": "c",
+        "typeinfo": "c",
+        "type_traits": "c",
+        "symbols.h": "c",
+        "limits": "c",
+        "stdbool.h": "c"
+    }
+}

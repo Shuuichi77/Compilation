@@ -1,0 +1,11 @@
+int a;
+
+struct mystruct {
+	int x;
+}
+
+deuxiemeerreur pasdetectee; 
+
+int main(void) {
+    return 0;
+}

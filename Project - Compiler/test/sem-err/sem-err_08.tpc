@@ -1,0 +1,12 @@
+int a;
+
+int main(void) {
+    int b;
+
+    a = 5;
+    b = 6;
+    c = 7; /* Undefined variable */
+    
+
+    return 0;
+}

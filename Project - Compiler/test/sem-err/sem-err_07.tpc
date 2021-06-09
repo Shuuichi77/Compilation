@@ -1,0 +1,21 @@
+struct mastruct {
+    int a;
+};
+
+struct mastruct s;
+
+int test(struct mastruct s) {
+    return 1;
+}
+
+int test2(struct mastruct2 s) { /* Parameter of function : Undefined structure name */
+    return 1;
+}
+
+int main(void) {
+    int a;
+    char c;
+    
+
+    return 0;
+}

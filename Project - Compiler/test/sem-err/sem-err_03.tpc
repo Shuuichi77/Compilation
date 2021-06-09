@@ -1,0 +1,9 @@
+int a;
+
+int main(void) {
+    /* Redefinition of same variable on same line */
+    int a;
+    char c, c;
+
+    return 0;
+}

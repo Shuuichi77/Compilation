@@ -1,0 +1,32 @@
+int a;
+
+struct mastruct {
+	int a;
+};
+
+
+int f1(void) {
+	return 5;
+}
+
+int f2(void) {
+	int a;
+	struct mastruct s1, S2, s3;
+	int b;
+
+	return 24;
+}
+
+int f3(void) {
+	struct mastruct s0, s3, s_, s_1;
+
+	return 43;
+}
+
+void f4(void) {
+}
+
+
+int main(void) {
+	return 0;
+}

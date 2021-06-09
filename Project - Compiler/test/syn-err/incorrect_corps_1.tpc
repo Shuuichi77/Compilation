@@ -1,0 +1,29 @@
+int bonnefonction(int a, int b) {
+    int x;
+    int y;
+
+    x = 0;
+
+    return 0;
+}
+
+int mauvaisefonction(int a, int b) {
+    int x;
+
+    x = 0;
+
+    int y;
+
+    return 0;
+}
+
+
+
+
+
+
+deuxiemeerreur pasdetecteeavant; 
+
+int main(void) {
+    return 0;
+}

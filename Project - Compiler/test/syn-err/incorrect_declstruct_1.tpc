@@ -1,0 +1,14 @@
+struct mastruct {
+    int a;
+};
+
+struct mastruct {
+    INT a;
+};
+
+
+deuxiemeerreur pasdetecteeavant; 
+
+int main(void) {
+    return 0;
+}

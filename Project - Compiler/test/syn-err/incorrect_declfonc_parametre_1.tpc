@@ -1,0 +1,18 @@
+int bonnefonction(int a) {
+	return 0;
+}
+
+int mauvaisefonction(mauvaistype a) {
+	return 0;
+}
+
+
+
+
+
+
+deuxiemeerreur pasdetecteeavant; 
+
+int main(void) {
+	return 0;
+}

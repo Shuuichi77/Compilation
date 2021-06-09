@@ -1,0 +1,36 @@
+int a, b, c, d, r_45, r54468488436512;
+char aa, bb, cc, r____;
+int e;
+char f;
+
+struct mastruct {
+	int eza_45758645_345631_86dezfzefez_fezfezeaze;
+	char h5_4_564561_4545jezfrz;
+
+
+};
+
+struct a____5474851568 {
+	int e;
+};
+
+struct mastruct mafonction(struct a____5474851568 s, int a, struct mastruct s2) {
+	return 0;
+}
+
+struct s f1(int a, struct mastruct s2, int b) {
+	return 0;
+}
+
+void f2(struct mastruct s) {
+	return 0;
+}
+
+int f3(void) {
+	return 0;
+}
+
+
+int main(void) {
+	return 0;
+}

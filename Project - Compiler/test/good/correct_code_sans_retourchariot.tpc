@@ -1,0 +1,1 @@
+int a; /* on va faire tout un code sur 1 ligne ! */ void mafonction(void) { int a; a = 50; return a; } int main (void) { /* ca commence a etre long */ char c; c = 'd'; return c; } // un petit commentaire pour la fin

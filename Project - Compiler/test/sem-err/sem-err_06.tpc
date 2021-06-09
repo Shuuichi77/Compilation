@@ -1,0 +1,14 @@
+struct mastruct {
+    int a;
+};
+
+struct mastruct s;
+struct mastruct2 f; /* Global variable : Undefined structure name */
+
+int main(void) {
+    int a;
+    char c;
+    
+
+    return 0;
+}

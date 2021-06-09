@@ -1,0 +1,16 @@
+int test;
+
+int function(void) {
+    return 1;
+}
+
+
+int main(void) {
+    int b;
+
+    b = function();
+    b = function2(); /* Undeclared function */
+    
+
+    return 0;
+}

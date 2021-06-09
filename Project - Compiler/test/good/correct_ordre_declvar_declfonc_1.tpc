@@ -1,0 +1,23 @@
+struct stfezruct {
+    int s;
+};
+
+int variableglobale;
+
+struct struct2 {
+    char sazjdajzdaz;
+    int ezhdezkdez;
+    char zjdajezkla;
+};
+
+struct struct2 mafonction (struct stfezruct struct1, int var1, struct struct2 struct2, int var2, struct stfezruct struct3) {
+    return var1;
+}
+
+int main(void) {
+    int a;
+
+    a = /* commentaire */ 10;
+
+    return 0;
+}

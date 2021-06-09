@@ -1,0 +1,25 @@
+int /* commentaire */ a;
+char b; // autre commentaire
+
+// commentaireici a ==== 0;;; c'est une erreur ??? non c'est un commentaire !
+/* iciaussi, pas d'errêur même si je fais if else else { print(rien)fefezfzezef; } */
+
+int c; /***///
+int d /**/ ;
+char e; /* commentaire */ // ici aussi /* et la */
+int f; /**/ // commentaire
+int g; // commentaire /* et la */
+
+int mafonction(void) {
+	return 0;
+} 
+
+
+int main(void) {
+    int a;
+
+    a = /* commentaire */ 10;
+
+    return a;
+// le commentaire à la fin comme ca est dans le fichier correct_corps_suiteinstr.tpc
+} /* et un commentaire à la fin ?!  */ 

@@ -1,0 +1,12 @@
+int a;
+
+int main(void) {
+    /* Redefinition of same variable not on same line */
+    int a;
+    char c;
+    int a;
+
+    return 0;
+}
+
+

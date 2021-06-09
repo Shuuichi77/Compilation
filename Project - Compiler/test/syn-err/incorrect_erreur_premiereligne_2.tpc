@@ -1,0 +1,11 @@
+mauvaisstruct mastruct {
+	int x;
+};
+
+
+
+deuxiemeerreur pasdetecteeavant; 
+
+int main(void) {
+	return 0;
+}

@@ -1,0 +1,9 @@
+mauvaischamp firstline;
+
+
+
+deuxiemeerreur pasdetecteeavant; 
+
+int main(void) {
+	return 0;
+}

@@ -1,0 +1,40 @@
+int bonnefonction(int a, int b) {
+    if (a) {
+        a = 0;
+    }
+
+    else if (b) {
+        b = 0;
+    }
+
+    else if (c) {
+        c = 0;
+    }
+
+    else {
+        d = 0;
+    }
+
+    return 0;
+}
+
+
+int mauvaisefonction(int a, int b) { 
+    else if (b) {
+    	b = 0;
+    }
+
+
+    return 0;
+}
+
+
+
+
+
+
+deuxiemeerreur pasdetecteeavant; 
+
+int main(void) {
+    return 0;
+}

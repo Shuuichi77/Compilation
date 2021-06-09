@@ -1,0 +1,20 @@
+char warning(void) {
+    return 64; /* Warning : Returning an int in a function which should return a char */
+}
+
+int not_warning(void) {
+    return 'c'; /* Not a warning */
+}
+
+int main(void) {
+    int n;
+    char c;
+
+    c = 64; /* Warning : LValue of type char assigning an int */
+    n = 'c'; /* Not a warning */
+
+    readc(n); /* Not a warning */
+    reade(c); /* Warning : reading a char var in reade */
+    return 0;
+}
+

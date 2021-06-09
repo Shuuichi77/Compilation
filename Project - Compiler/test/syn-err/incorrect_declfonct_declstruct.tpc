@@ -1,0 +1,16 @@
+int mafonction(void) {
+	return 1;
+}
+
+struct mastruct {
+	int a;
+};
+
+
+deuxiemeerreur pasdetecteeavant; 
+
+
+int main(void) {
+    return 0;
+}
+

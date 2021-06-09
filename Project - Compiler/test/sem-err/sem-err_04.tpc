@@ -1,0 +1,18 @@
+struct mastruct {
+    int a;
+};
+
+int a, b, c;
+char pointer;
+
+/* Redefinition of same struct name */
+struct mastruct {
+    char c;
+};
+
+int main(void) {
+    int a;
+    char c;
+
+    return 0;
+}

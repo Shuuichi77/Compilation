@@ -1,0 +1,20 @@
+int test;
+
+int function(int a) {
+    int test; /* Not an error if the name is re-used by a local variable */
+
+    return 1;
+}
+
+int test(int a) { /* Function name already used by a global variable */
+    return 1;
+}
+
+
+int main(void) {
+    int b;
+
+    
+
+    return 0;
+}

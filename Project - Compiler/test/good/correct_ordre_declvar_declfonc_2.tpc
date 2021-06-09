@@ -1,0 +1,14 @@
+int a;
+
+struct mastruct {
+	int a;
+};
+
+int b;
+
+void mafonction(struct mastruct s, int a) {
+}
+
+int main(void) {
+	return 0;
+}

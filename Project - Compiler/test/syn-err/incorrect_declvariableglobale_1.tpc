@@ -1,0 +1,8 @@
+int a;
+mauvaistype variable_globale;
+
+deuxiemeerreur pasdetecteeavant; 
+
+int main(void) {
+    return 0;
+}

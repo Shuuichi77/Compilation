@@ -1,0 +1,379 @@
+
+|--------------------- Good Tests ---------------------|
+
+- (1/7) Testing "test/good/correct_code_sans_retourchariot.tpc" :
+Result : Test succeed 
+
+- (2/7) Testing "test/good/correct_commentaire.tpc" :
+Result : Test succeed 
+
+- (3/7) Testing "test/good/correct_corps_declvar_declfonc_3.tpc" :
+Result : Test succeed 
+
+- (4/7) Testing "test/good/correct_ordre_declvar_declfonc_1.tpc" :
+Result : Test succeed 
+
+- (5/7) Testing "test/good/correct_ordre_declvar_declfonc_2.tpc" :
+Result : Test succeed 
+
+- (6/7) Testing "test/good/correct_test_declvar_declfonc.tpc" :
+Result : Test succeed 
+
+- (7/7) Testing "test/good/correct_test_signes.tpc" :
+Result : Test succeed 
+
+TOTAL : 7/7 tests succeed in directory "test/good/"
+
+|--------------------- Syntaxique Errors Tests ---------------------|
+
+- (1/50) Testing "test/syn-err/incorrect_commentaire_1.tpc" :
+Error near line 33 character 4 : syntax error, unexpected $end
+    /*/
+   ^
+Result : Test failed 
+
+- (2/50) Testing "test/syn-err/incorrect_corps_1.tpc" :
+Error near line 15 character 7 : syntax error, unexpected SIMPLETYPE
+    int y;
+      ^
+Result : Test failed 
+
+- (3/50) Testing "test/syn-err/incorrect_corps_2.tpc" :
+Error near line 10 character 7 : syntax error, unexpected SIMPLETYPE
+    int y;
+      ^
+Result : Test failed 
+
+- (4/50) Testing "test/syn-err/incorrect_corps_3.tpc" :
+Error near line 10 character 10 : syntax error, unexpected RETURN, expecting OR or ';'
+    return 0;
+         ^
+Result : Test failed 
+
+- (5/50) Testing "test/syn-err/incorrect_corps_fonct_1.tpc" :
+Error near line 13 character 19 : syntax error, unexpected VOID, expecting ')'
+    mafonction(void);
+                  ^
+Result : Test failed 
+
+- (6/50) Testing "test/syn-err/incorrect_corps_fonct_2.tpc" :
+Error near line 13 character 16 : syntax error, unexpected $undefined, expecting ')'
+    mafonction(_a);
+               ^
+Result : Test failed 
+
+- (7/50) Testing "test/syn-err/incorrect_declfonc_1.tpc" :
+Error near line 5 character 3 : syntax error, unexpected IDENT, expecting $end
+INT bonnefonction(void) {
+  ^
+Result : Test failed 
+
+- (8/50) Testing "test/syn-err/incorrect_declfonc_2.tpc" :
+Error near line 5 character 11 : syntax error, unexpected IDENT, expecting $end
+mauvaistype bonnefonction(void) {
+          ^
+Result : Test failed 
+
+- (9/50) Testing "test/syn-err/incorrect_declfonc_3.tpc" :
+Error near line 5 character 5 : syntax error, unexpected $undefined, expecting IDENT
+int _mauvaisefonction(void) {
+    ^
+Result : Test failed 
+
+- (10/50) Testing "test/syn-err/incorrect_declfonc_4.tpc" :
+Error near line 5 character 5 : syntax error, unexpected NUM, expecting IDENT
+int 1mauvaisefonction(void) {
+    ^
+Result : Test failed 
+
+- (11/50) Testing "test/syn-err/incorrect_declfonc_parametre_1.tpc" :
+Error near line 5 character 32 : syntax error, unexpected IDENT, expecting SIMPLETYPE or VOID or STRUCT
+int mauvaisefonction(mauvaistype a) {
+                               ^
+Result : Test failed 
+
+- (12/50) Testing "test/syn-err/incorrect_declfonc_parametre_2.tpc" :
+Error near line 5 character 25 : syntax error, unexpected IDENT, expecting SIMPLETYPE or VOID or STRUCT
+int mauvaisefonction(VOID) {
+                        ^
+Result : Test failed 
+
+- (13/50) Testing "test/syn-err/incorrect_declfonc_parametre_3.tpc" :
+Error near line 5 character 29 : syntax error, unexpected $undefined, expecting IDENT
+int mauvaisefonction(struct _mastruct) {
+                            ^
+Result : Test failed 
+
+- (14/50) Testing "test/syn-err/incorrect_declfonct_declstruct.tpc" :
+Error near line 5 character 17 : syntax error, unexpected '{', expecting IDENT
+struct mastruct {
+                ^
+Result : Test failed 
+
+- (15/50) Testing "test/syn-err/incorrect_declfonct_declvar.tpc" :
+Error near line 5 character 6 : syntax error, unexpected ';', expecting '('
+int a;
+     ^
+Result : Test failed 
+
+- (16/50) Testing "test/syn-err/incorrect_declstruct_1.tpc" :
+Error near line 6 character 7 : syntax error, unexpected IDENT, expecting SIMPLETYPE
+    INT a;
+      ^
+Result : Test failed 
+
+- (17/50) Testing "test/syn-err/incorrect_declstruct_2.tpc" :
+Error near line 5 character 6 : syntax error, unexpected IDENT, expecting SIMPLETYPE or VOID or STRUCT
+STRUCT mastruct {
+     ^
+Result : Test failed 
+
+- (18/50) Testing "test/syn-err/incorrect_declstruct_mauvaischamp_1.tpc" :
+Error near line 4 character 8 : syntax error, unexpected IDENT, expecting SIMPLETYPE or '}'
+    ints y;
+       ^
+Result : Test failed 
+
+- (19/50) Testing "test/syn-err/incorrect_declstruct_mauvaischamp_2.tpc" :
+Error near line 5 character 1 : syntax error, unexpected '}', expecting ';' or ','
+};
+^
+Result : Test failed 
+
+- (20/50) Testing "test/syn-err/incorrect_declstruct_mauvaischamp_3.tpc" :
+Error near line 4 character 1 : syntax error, unexpected '}', expecting SIMPLETYPE
+};
+^
+Result : Test failed 
+
+- (21/50) Testing "test/syn-err/incorrect_declstruct_mauvaischamp_4.tpc" :
+Error near line 7 character 14 : syntax error, unexpected IDENT, expecting ';'
+deuxiemeerreur pasdetectee; 
+             ^
+Result : Test failed 
+
+- (22/50) Testing "test/syn-err/incorrect_declvar_declfonc_declstruct.tpc" :
+Error near line 13 character 17 : syntax error, unexpected '{', expecting IDENT
+struct mastruct {
+                ^
+Result : Test failed 
+
+- (23/50) Testing "test/syn-err/incorrect_declvar_declfonc_declvar.tpc" :
+Error near line 11 character 6 : syntax error, unexpected ';', expecting '('
+int a;
+     ^
+Result : Test failed 
+
+- (24/50) Testing "test/syn-err/incorrect_declvariableglobale_1.tpc" :
+Error near line 2 character 11 : syntax error, unexpected IDENT, expecting SIMPLETYPE or VOID or STRUCT
+mauvaistype variable_globale;
+          ^
+Result : Test failed 
+
+- (25/50) Testing "test/syn-err/incorrect_declvariableglobale_2.tpc" :
+Error near line 3 character 5 : syntax error, unexpected NUM, expecting IDENT
+int 1a;
+    ^
+Result : Test failed 
+
+- (26/50) Testing "test/syn-err/incorrect_declvariableglobale_3.tpc" :
+Error near line 2 character 3 : syntax error, unexpected IDENT, expecting SIMPLETYPE or VOID or STRUCT
+INT a;
+  ^
+Result : Test failed 
+
+- (27/50) Testing "test/syn-err/incorrect_declvariableglobale_4.tpc" :
+Error near line 3 character 5 : syntax error, unexpected $undefined, expecting IDENT
+int _a;
+    ^
+Result : Test failed 
+
+- (28/50) Testing "test/syn-err/incorrect_erreur_derniereligne_1.tpc" :
+Error near line 3 character 11 : syntax error, unexpected IDENT, expecting $end
+    return 0;
+          ^
+Result : Test failed 
+
+- (29/50) Testing "test/syn-err/incorrect_erreur_derniereligne_2.tpc" :
+Error near line 3 character 3 : syntax error, unexpected IDENT, expecting $end
+    return 0;
+  ^
+Result : Test failed 
+
+- (30/50) Testing "test/syn-err/incorrect_erreur_premiereligne_1.tpc" :
+Error near line 1 character 12 : syntax error, unexpected IDENT, expecting SIMPLETYPE or VOID or STRUCT
+mauvaischamp firstline;
+           ^
+Result : Test failed 
+
+- (31/50) Testing "test/syn-err/incorrect_erreur_premiereligne_2.tpc" :
+Error near line 1 character 13 : syntax error, unexpected IDENT, expecting SIMPLETYPE or VOID or STRUCT
+mauvaisstruct mastruct {
+            ^
+Result : Test failed 
+
+- (32/50) Testing "test/syn-err/incorrect_erreur_premiereligne_3.tpc" :
+Error near line 1 character 5 : syntax error, unexpected $undefined, expecting IDENT
+int _mauvaisfonction(void) {
+    ^
+Result : Test failed 
+
+- (33/50) Testing "test/syn-err/incorrect_ifelse_1.tpc" :
+Error near line 27 character 10 : syntax error, unexpected '('
+    else (b) {
+         ^
+Result : Test failed 
+
+- (34/50) Testing "test/syn-err/incorrect_ifelse_2.tpc" :
+Error near line 23 character 8 : syntax error, unexpected ELSE
+    else if (b) {
+       ^
+Result : Test failed 
+
+- (35/50) Testing "test/syn-err/incorrect_ifelse_3.tpc" :
+Error near line 23 character 8 : syntax error, unexpected '{', expecting '('
+    if {
+       ^
+Result : Test failed 
+
+- (36/50) Testing "test/syn-err/incorrect_ifelse_4.tpc" :
+Error near line 22 character 8 : syntax error, unexpected ELSE
+    else {
+       ^
+Result : Test failed 
+
+- (37/50) Testing "test/syn-err/incorrect_oubli_1.tpc" :
+Error near line 11 character 5 : syntax error, unexpected IDENT, expecting '{'
+    x = 0;
+    ^
+Result : Test failed 
+
+- (38/50) Testing "test/syn-err/incorrect_oubli_2.tpc" :
+Error near line 14 character 14 : syntax error, unexpected IDENT, expecting ';'
+    mafonction(a);
+             ^
+Result : Test failed 
+
+- (39/50) Testing "test/syn-err/incorrect_oubli_3.tpc" :
+Error near line 13 character 26 : syntax error, unexpected ';', expecting ')'
+    mafonction(a, b, c, d;
+                         ^
+Result : Test failed 
+
+- (40/50) Testing "test/syn-err/incorrect_oubli_4.tpc" :
+Error near line 11 character 11 : syntax error, unexpected $undefined, expecting OR or ')'
+    if (a & b) {
+          ^
+Result : Test failed 
+
+- (41/50) Testing "test/syn-err/incorrect_oubli_5.tpc" :
+Error near line 11 character 11 : syntax error, unexpected $undefined, expecting OR or ')'
+    if (a | b) {
+          ^
+Result : Test failed 
+
+- (42/50) Testing "test/syn-err/incorrect_print_1.tpc" :
+Error near line 12 character 24 : syntax error, unexpected DIVSTAR
+    print(rkegnjergzre*****);
+                       ^
+Result : Test failed 
+
+- (43/50) Testing "test/syn-err/incorrect_print_2.tpc" :
+Error near line 12 character 11 : syntax error, unexpected ')'
+    print();
+          ^
+Result : Test failed 
+
+- (44/50) Testing "test/syn-err/incorrect_read_1.tpc" :
+Error near line 12 character 12 : syntax error, unexpected ADDSUB, expecting ')'
+    reade(a+a);
+           ^
+Result : Test failed 
+
+- (45/50) Testing "test/syn-err/incorrect_read_2.tpc" :
+Error near line 12 character 11 : syntax error, unexpected $undefined, expecting IDENT
+    reade(_a);
+          ^
+Result : Test failed 
+
+- (46/50) Testing "test/syn-err/incorrect_read_3.tpc" :
+Error near line 12 character 20 : syntax error, unexpected IDENT, expecting ';'
+    reade(a) eazazea;
+                   ^
+Result : Test failed 
+
+- (47/50) Testing "test/syn-err/incorrect_read_4.tpc" :
+Error near line 12 character 11 : syntax error, unexpected ')', expecting IDENT
+    reade();
+          ^
+Result : Test failed 
+
+- (48/50) Testing "test/syn-err/incorrect_read_5.tpc" :
+Error near line 12 character 21 : syntax error, unexpected '(', expecting ')'
+    reade(mafonction(x));
+                    ^
+Result : Test failed 
+
+- (49/50) Testing "test/syn-err/incorrect_return_1.tpc" :
+Error near line 13 character 12 : syntax error, unexpected $undefined
+    return _;
+           ^
+Result : Test failed 
+
+- (50/50) Testing "test/syn-err/incorrect_while_1.tpc" :
+Error near line 11 character 11 : syntax error, unexpected '{', expecting '('
+    while {
+          ^
+Result : Test failed 
+
+TOTAL : 0/50 tests succeed in directory "test/syn-err/"
+
+|--------------------- Semantique Errors Tests ---------------------|
+
+- (1/9) Testing "test/sem-err/sem-err_01.tpc" :
+Error near line 12 character 19 : semantic error, undefined function "function2"
+Result : Test failed 
+
+- (2/9) Testing "test/sem-err/sem-err_02.tpc" :
+Error near line 7 character 9 : semantic error, redefinition of variable "a"
+Result : Test failed 
+
+- (3/9) Testing "test/sem-err/sem-err_03.tpc" :
+Error near line 6 character 13 : semantic error, redefinition of variable "c"
+Result : Test failed 
+
+- (4/9) Testing "test/sem-err/sem-err_04.tpc" :
+Error near line 10 character 11 : semantic error, redefinition of struct "mastruct"
+Result : Test failed 
+
+- (5/9) Testing "test/sem-err/sem-err_05.tpc" :
+Error near line 10 character 22 : semantic error, undefined "mastruct2" struct
+Result : Test failed 
+
+- (6/9) Testing "test/sem-err/sem-err_06.tpc" :
+Error near line 6 character 18 : semantic error, undefined "mastruct2" struct
+Result : Test failed 
+
+- (7/9) Testing "test/sem-err/sem-err_07.tpc" :
+Error near line 11 character 28 : semantic error, undefined "mastruct2" struct
+Result : Test failed 
+
+- (8/9) Testing "test/sem-err/sem-err_08.tpc" :
+Error near line 8 character 5 : semantic error, undefined variable "c"
+Result : Test failed 
+
+- (9/9) Testing "test/sem-err/sem-err_09.tpc" :
+Error near line 9 character 15 : semantic error, identifier "test" is already used by another variable
+Result : Test failed 
+
+TOTAL : 0/9 tests succeed in directory "test/sem-err/"
+
+|--------------------- Warnings Tests ---------------------|
+
+- (1/1) Testing "test/warn/warnings.tpc" :
+Warning : Returned an int whereas the return value should have been char in function "warning"
+Warning : assigning char variable with an int
+Warning : using reade on a char variable
+Result : Test succeed 
+
+TOTAL : 1/1 tests succeed in directory "test/warn/"
