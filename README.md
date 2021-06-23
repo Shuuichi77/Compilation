@@ -1,2 +1,2 @@
 # Compilation
-This repository contains all my work on Compilation (flex/bison/nasm/C) of my 3rd year of Computer Science Degree
+"Project - Compiler" is the project I did for the semester.
